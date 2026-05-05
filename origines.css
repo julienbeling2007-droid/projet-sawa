@@ -1,5 +1,5 @@
  header {
-     background-image: url("SONGO.jpg");
+     background-image: url("link.jpg");
      background-size: cover;
      border-radius: 15px;
      padding: 20px;
@@ -18,7 +18,7 @@
  
  body {
      border: 20px solid;
-     border-image: url("SONGO.jpg") 30 round;
+     border-image: url("link.jpg") 30 round;
      background-color: blanchedalmond;
  }
  
@@ -93,7 +93,7 @@
      }
      15% {
          /* La carte sort à gauche */
-         transform: translateX(-10%) rotate(0deg);
+         transform: translateX(-20%) rotate(0deg);
          z-index: 3;
      }
      16% {
@@ -139,10 +139,11 @@
  footer img {
      object-fit: cover;
      margin-top: 300px;
+     border-radius: 15px;
  }
  
  footer img:hover {
-     background-color: transparent;
+     opacity: 0.5;
  }
  
  footer pre {
@@ -153,5 +154,5 @@
  }
  
  pre {
-     line-height: 20px;
+     line-height: 1.6;
  }
