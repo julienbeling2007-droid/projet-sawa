@@ -146,8 +146,8 @@
      opacity: 0.5;
  }
  
- footer pre {
-     background-color: rgba(10, 4, 4, 0.801);
+ footer p {
+     background-color: rgba(10, 4, 4, 0.897);
      height: 200px;
      color: azure;
      border-radius: 15px;
