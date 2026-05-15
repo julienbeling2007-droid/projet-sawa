@@ -1,0 +1,49 @@
+ p:hover {
+     text-shadow: 0 0 10px orange;
+     transform: scale(1.02);
+ }
+ 
+ header {
+     background-image: url(assets/SONGO.jpg);
+     width: 100%;
+     height: 170px;
+     border-radius: 15px;
+     border-left: 5px;
+     border-right: 5px;
+ }
+ 
+ header h1:hover {
+     transform: scale(1.05);
+     text-shadow: 0 0 10px #cb9b51;
+ }
+ 
+ header h1 {
+     text-align: center;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: white;
+     font-size: 300%;
+ }
+ 
+ header nav ul {
+     display: flex;
+     list-style: none;
+     justify-content: center;
+     gap: 40px;
+     font-weight: bold;
+     font-size: 120%;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ header nav ul li a {
+     text-decoration: none;
+     color: rgb(58, 110, 110);
+     background-color: bisque;
+     border-radius: 10px;
+     display: inline-block;
+     padding: 10px;
+ }
+ 
+ header nav ul li a:hover {
+     color: rgba(255, 0, 0, 0.836);
+     transform: scale(1.2);
+ }
