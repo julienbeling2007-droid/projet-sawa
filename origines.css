@@ -16,7 +16,6 @@
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      font-size: 240%;
      font-weight: bold;
-     transition: 2s;
  }
  
  header h1:hover {
@@ -149,7 +148,6 @@
      display: flex;
      gap: 30px;
      justify-content: center;
-     align-items: center;
  }
  
  .card {
@@ -166,19 +164,19 @@
  
  .card img {
      width: 100%;
-     height: 150px;
+     height: 130px;
+     background-size: cover;
      object-fit: cover;
-     overflow: hidden;
  }
  
  .card:hover {
      transform: scale(1.1);
      box-shadow: 0 0 30px gold;
-     transition: 4s;
+     transition: 0.9s;
  }
  
  .card p {
-     margin-top: 5px;
+     margin-top: 0;
      background-color: rgba(0, 0, 0, 0.137);
      border: 2px solid rgba(153, 205, 50, 0.233);
      border-radius: 10px;
@@ -205,4 +203,55 @@
  .tox:hover {
      text-shadow: gold;
      transform: scale(1.1);
+ }
+ 
+ .canvas {
+     width: 100%;
+     text-align: center;
+     height: 500px;
+     background-image: url("assets/pexels-dongdilac-29865226.jpg");
+     margin-bottom: 150px;
+     object-fit: cover;
+     border-radius: 10px;
+ }
+ 
+ .canvas p {
+     text-align: center;
+     color: white;
+     margin-top: 10%;
+     margin-left: 50px;
+     font-family: "Audiowide", sans-serif;
+     font-size: 300%;
+ }
+ 
+ .canvas:hover {
+     opacity: 0.5;
+ }
+ 
+ .canvas p:hover {
+     text-shadow: 10px 10px 75px gold;
+ }
+ 
+ .tournoi {
+     display: flex;
+     justify-content: center;
+     gap: 400px;
+ }
+ 
+ .tournoi a {
+     text-decoration: none;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: bold;
+     font-size: 140%;
+     color: white;
+     background-color: rgb(21, 177, 21);
+     padding: 10px;
+     border-radius: 15px;
+ }
+ 
+ .tournoi a:hover {
+     transform: scale(1.1);
+     box-shadow: 10px 10px 25px rgb(15, 219, 15);
+     transition: all 0.8s ease;
+     color: red;
  }
