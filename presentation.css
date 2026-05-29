@@ -1,50 +1,182 @@
- p:hover {
-     text-shadow: 0 0 10px orange;
-     transform: scale(1.02);
- }
- 
- header {
-     margin-top: 0;
-     background-image: url(assets/SONGO.jpg);
-     width: 100%;
-     height: 170px;
-     border-radius: 15px;
-     border-left: 5px;
-     border-right: 5px;
- }
- 
- header h1:hover {
-     transform: scale(1.05);
-     text-shadow: 0 0 10px #cb9b51;
- }
- 
- header h1 {
-     text-align: center;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     color: white;
-     font-size: 300%;
- }
- 
- header nav ul {
-     display: flex;
-     list-style: none;
-     justify-content: center;
-     gap: 40px;
-     font-weight: bold;
-     font-size: 120%;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
- 
- header nav ul li a {
-     text-decoration: none;
-     color: rgb(58, 110, 110);
-     background-color: bisque;
-     border-radius: 10px;
-     display: inline-block;
-     padding: 10px;
- }
- 
- header nav ul li a:hover {
-     color: rgba(255, 0, 0, 0.836);
-     transform: scale(1.2);
- }
+body {
+    background-color: antiquewhite;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 45px;
+    padding: 15px;
+    font-weight: 1900;
+}
+
+header li {
+    cursor: pointer;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    gap: 40px;
+}
+
+.menu a {
+    color: yellow;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu a:hover {
+    color: red;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.active {
+    background-color: orange;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    justify-content: flex-start;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.logo:hover {
+    text-shadow: 0 0 20px gold;
+}
+
+.canton {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/ethnie.jpg");
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    top: 0;
+    border-radius: 10px;
+}
+
+.button a {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid wheat;
+    padding: 5px;
+    background-color: orange;
+    width: 20%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button a:hover {
+    box-shadow: 5px 5px 25px orange;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.one {
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+}
+
+footer {
+    background-color: #323235;
+    color: aliceblue;
+}
+
+.doc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.doc:hover {
+    transform: scale(1.1);
+    transition: 0.3s
+}
+
+.bonjour {
+    max-width: 25%;
+}
+
+.coc {
+    border: 3px solid white;
+    border-radius: 8px;
+    background-color: gold;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+.cac {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.coc:hover {
+    box-shadow: 0 15px 25px yellow;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.band {
+    background-color: rgba(236, 203, 14, 0.966);
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 0;
+}
+
+.bond {
+    display: flex;
+    justify-content: right;
+    animation: bouger 20s linear infinite;
+}
+
+.element {
+    padding: 10px;
+    letter-spacing: 0.3em;
+    color: var(--deep);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.element::before {
+    content: "*";
+}
+
+@keyframes bouger {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}

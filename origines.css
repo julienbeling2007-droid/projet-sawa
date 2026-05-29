@@ -1,8 +1,9 @@
  header {
      background-image: url("assets/SONGO.jpg");
+     background-size: cover;
      width: 100%;
-     height: 120px;
-     border-radius: 15px;
+     height: 180px;
+     border: radius 8px;
      padding: 20px;
      position: sticky;
      position: -webkit-sticky;
@@ -16,19 +17,20 @@
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      font-size: 240%;
      font-weight: bold;
+     animation: apparaitre 2s ease-out both;
  }
  
  header h1:hover {
      transform: scale(1.02);
      text-shadow: 0 0px 30px rgba(255, 217, 0, 0.911);
      color: gold;
+     transition: 0.5s;
  }
  
  body {
      border: 20px solid;
-     border-image: url("assets/SONGO.jpg") 30 round;
+     border-image: url("assets/SONGO.jpg") 40 round;
      background-color: blanchedalmond;
-     border-top: 5px solid;
  }
  
  header ul {
@@ -42,22 +44,23 @@
  }
  
  header li a {
-     color: rgb(58, 110, 110);
-     background-color: bisque;
+     color: yellow;
      border: 2px solid rgba(255, 255, 255, 0.8);
      border-radius: 10px;
      padding: 5px;
      text-decoration: none;
      display: inline-block;
+     animation: bouger 4s infinite;
  }
  
  header li a:hover {
      color: #FF4500;
      transform: scale(1.2);
+     transition: 0.5s;
  }
  
- header li a:active {
-     background-color: gold;
+ .active {
+     background-color: orange;
  }
  
  div {
@@ -148,6 +151,12 @@
      display: flex;
      gap: 30px;
      justify-content: center;
+     animation-name: nullptr;
+     animation-fill-mode: both;
+     animation-timing-function: ease-out;
+     animation-timeline: view();
+     animation-range: entry 10% cover 40%;
+     transition: 1s;
  }
  
  .card {
@@ -200,6 +209,11 @@
      transform: scale(1.1);
  }
  
+ .tox {
+     background-color: rgb(55, 55, 83);
+     padding: 10px;
+ }
+ 
  .tox:hover {
      text-shadow: gold;
      transform: scale(1.1);
@@ -236,6 +250,11 @@
      display: flex;
      justify-content: center;
      gap: 400px;
+     animation-name: tour;
+     animation-fill-mode: both;
+     animation-timeline: view();
+     animation-iteration-count: 1;
+     animation-range: entry 10% cover 40%;
  }
  
  .tournoi a {
@@ -254,4 +273,46 @@
      box-shadow: 10px 10px 25px rgb(15, 219, 15);
      transition: all 0.8s ease;
      color: red;
+ }
+ 
+ @keyframes nullptr {
+     from {
+         opacity: 0;
+         transform: scale(0.8);
+     }
+     to {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }
+ 
+ @keyframes tour {
+     from {
+         opacity: 0;
+         transform: translateY(20px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+ 
+ @keyframes bouger {
+     from {
+         transform: translateX(10px);
+     }
+     to {
+         transform: translateX(30px);
+     }
+ }
+ 
+ @keyframes apparaitre {
+     from {
+         opacity: 0;
+         transform: translateY(20px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
  }
